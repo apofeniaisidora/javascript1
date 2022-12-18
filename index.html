@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Primer proyecto javascript</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="cuerpo">
+    <div class="contenedor">
+        <h1>Carrito de compra</h1>
+        <img src="Borchali_rug.png">
+        <h6>Alfombra Borchali</h6>
+        <input>
+        <br>
+        <label>Color</label>
+            <select>
+              <option value="#7c0a02">Rojo</option>
+              <option value="#b0bf1a">Verde</option>
+              <option value="#0026ca">Azul</option>
+            </select>
+        <p>Precio: $60.000</p>
+        <button>Calcular total</button>
+    </div>
+    <div>
+        <p>Total:</p><span></span>
+        <p>Cantidad:</p><span></span>
+        <p class="color">Color:</p><div id="colorEleccion"></div>
+    </div>
+        </div>
+    </body>
+    <script>
+     btn = document.querySelector("button");   
+     btn.addEventListener("click", () => {
+              colorSelect = document.querySelector("select");
+              color = colorSelect.value;
+      
+              forma = document.querySelector("#colorEleccion");
+              forma.style.background = color;})
+    </script>
+</html>

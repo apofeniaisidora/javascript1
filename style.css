@@ -1,0 +1,16 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #7f0000;
+}
+.cuerpo{display: flex;   background-color: white;
+    min-height: 90vh; width: 90vh; align-items: center; justify-content: center; margin-left: auto; margin-right: auto;}
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  width: 10em;
+}
+#colorEleccion {width: 20px; height: 20px; background-color: #7c0a02; border-radius: 50%;}
