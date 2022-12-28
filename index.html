@@ -27,7 +27,7 @@
         </div>
         <div>
             <h3>Total:<span id="resultado"></span></h3>
-            <p>Cantidad:</p><span></span>
+            <p>Cantidad:</p><span id="cantidad"></span>
             <p class="color">Color:</p>
             <div id="colorEleccion"></div>
         </div>
@@ -36,6 +36,8 @@
 <script>
  //Cambio de color
  btn = document.querySelector("button");
+ cantidad = document.querySelector("#cantidad")
+
     btn.addEventListener("click", () => {
         colorSelect = document.querySelector("select");
         color = colorSelect.value;
@@ -50,6 +52,7 @@
 
         resultadoSpan = document.querySelector("#resultado");
         resultadoSpan.innerHTML = resultado;
+        cantidad.innerHTML = primerNumero;
     });
 
     //suma de carrito                             
