@@ -14,3 +14,4 @@ img {
   width: 10em;
 }
 #colorEleccion {width: 20px; height: 20px; background-color: #7c0a02; border-radius: 50%;}
+button {margin-bottom: 2em;}
